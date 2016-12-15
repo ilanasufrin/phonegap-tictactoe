@@ -102,11 +102,6 @@
     <icon src="pgbomit/icon-40.png" gap:platform="ios" width="40" height="40" />
     <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
 
-    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
-    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.8.1">
-        <param name="SENDER_ID" value="24803504516" />
-    </gap:plugin>
-
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ;
       using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android
       gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" -->
