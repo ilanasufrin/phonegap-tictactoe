@@ -4,17 +4,17 @@
         xmlns:gap   = "http://phonegap.com/ns/1.0"
         xmlns:android   = "http://schemas.android.com/apk/res/android"
         id          = "com.gamingplatform.simon"
-        versionCode = "4"
-        version     = "1.0.3" >
+        versionCode = "5"
+        version     = "1.0.5" >
     <!-- versionCode is optional and Android only:
       needs to be increased every time you submit a new APK version.
       see: http://developer.android.com/tools/publishing/versioning.html
     -->
     <gap:config-file platform="ios" parent="CFBundleShortVersionString">
-      <string>100</string>
+      <string>400</string>
     </gap:config-file>
 
-    <content src="https://letsplaysimon.com/?phonegapPlugins=v103" />
+    <content src="https://letsplaysimon.com/?phonegapPlugins=v104" />
 
     <name>Simon</name>
     <author email="ilanasufrin@gmail.com">
@@ -102,6 +102,11 @@
     <icon src="pgbomit/icon-40.png" gap:platform="ios" width="40" height="40" />
     <icon src="pgbomit/icon-80.png" gap:platform="ios" width="80" height="80" />
 
+    <!-- see: https://www.npmjs.com/package/phonegap-plugin-push -->
+    <gap:plugin name="phonegap-plugin-push" source="npm" spec="1.9.2">
+        <param name="SENDER_ID" value="24803504516" />
+    </gap:plugin>
+
     <!-- see: https://www.npmjs.com/package/cordova-plugin-facebook4 ;
       using specific git version due to this: http://community.phonegap.com/nitobi/topics/sudden-build-error-android
       gap:plugin spec="https://github.com/jeduan/cordova-plugin-facebook4#aff9a08a86cc6c6a18019f7adc2896ddf97c11cd" source="git" -->
@@ -173,3 +178,4 @@
     <gap:plugin name="cordova-plugin-admob-facebook" source="npm" spec="1.0.3" />
 
 </widget>
+
